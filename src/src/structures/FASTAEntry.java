@@ -2,11 +2,11 @@ package structures;
 
 import java.util.Objects;
 
-public class FastaEntry {
+public class FASTAEntry {
     private String id;
     private String sequence;
 
-    public FastaEntry(String id, String sequence) {
+    public FASTAEntry(String id, String sequence) {
         this.id = id;
         this.sequence = sequence;
     }
@@ -31,7 +31,7 @@ public class FastaEntry {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        FastaEntry that = (FastaEntry) o;
+        FASTAEntry that = (FASTAEntry) o;
         return Objects.equals(id, that.id) && Objects.equals(sequence, that.sequence);
     }
 
